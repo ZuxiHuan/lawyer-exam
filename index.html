@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>南京市律师执业面试考核题库 · 2024年版</title>
+<meta name="author" content="兰台南京宦祖希律师">
+<meta name="copyright" content="© 2024 兰台南京宦祖希律师 版权所有">
+<meta name="description" content="南京市律师执业面试考核题库，2024年版，共100道题目，由兰台南京宦祖希律师整理制作。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -512,6 +515,63 @@
     .stats-bar { flex-direction: column; }
     .q-body { font-size: 0.93rem; }
   }
+
+  /* ── 版权角标水印 ── */
+  .watermark-badge {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 999;
+    background: rgba(26, 20, 16, 0.82);
+    color: rgba(245, 240, 232, 0.92);
+    font-family: 'Noto Serif SC', 'SimSun', serif;
+    font-size: 11px;
+    line-height: 1.6;
+    padding: 0.55rem 0.85rem;
+    border-radius: 4px;
+    border-left: 2px solid var(--gold);
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    letter-spacing: 0.5px;
+  }
+  .watermark-badge .wm-name {
+    color: var(--gold);
+    font-weight: 600;
+    display: block;
+  }
+  .watermark-badge .wm-copy {
+    color: rgba(245, 240, 232, 0.6);
+    font-size: 10px;
+    display: block;
+  }
+
+  /* ── 底部版权栏 ── */
+  footer.copyright-bar {
+    background: var(--ink);
+    color: rgba(245, 240, 232, 0.55);
+    font-size: 12px;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    line-height: 2;
+    border-top: 3px solid;
+    border-image: linear-gradient(90deg, var(--red), var(--gold)) 1;
+  }
+  footer.copyright-bar strong {
+    color: var(--gold);
+    font-family: 'Noto Serif SC', 'SimSun', serif;
+    font-weight: 600;
+  }
+  footer.copyright-bar .copy-divider {
+    margin: 0 0.5rem;
+    opacity: 0.3;
+  }
+
+  @media (max-width: 600px) {
+    .watermark-badge { bottom: 0.875rem; right: 0.875rem; font-size: 10px; padding: 0.45rem 0.7rem; }
+  }
 </style>
 </head>
 <body>
@@ -897,5 +957,24 @@ function switchView(name, btn) {
 buildBrowseList();
 updateStats();
 </script>
+
+<!-- 固定角标水印 -->
+<div class="watermark-badge" aria-hidden="true">
+  <span class="wm-name">兰台南京宦祖希律师</span>
+  <span class="wm-copy">© 2024 版权所有</span>
+</div>
+
+<!-- 底部版权栏 -->
+<footer class="copyright-bar">
+  <div>本题库由 <strong>兰台南京宦祖希律师</strong> 整理制作</div>
+  <div>
+    <span>© 2024 版权所有</span>
+    <span class="copy-divider">·</span>
+    <span>南京市律师执业面试考核题库</span>
+    <span class="copy-divider">·</span>
+    <span>未经授权不得转载</span>
+  </div>
+</footer>
+
 </body>
 </html>
